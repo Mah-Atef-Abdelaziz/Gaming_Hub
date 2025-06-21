@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -72,13 +73,25 @@
                 </ul>
             </nav>
         </div>
-    </header>
+    </header><!-- Add this inside <body>, before the <footer> -->
+    <section id="info-section" style="padding: 40px 20px; background-color: #f5f5f5; text-align: center;">
+        <h2 style="margin-bottom: 20px;">Game Information</h2>
+        <div style="max-width: 800px; margin: 0 auto; text-align: left;">
+            <p><strong>Game Name:</strong> Memory Game</p>
+            <p><strong>Objective:</strong> Match all pairs of cards using the least number of moves possible.</p>
+        </div>
+    </section>
+
     <div id="memory-container">
         <div id="moves">Moves: 0</div>
         <div id="memory-game"></div>
         <button id="restart">Restart</button>
     </div>
-
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Gaming Hub. All rights reserved.</p>
+        </div>
+    </footer>
     <script src="../js/memory.js"></script>
 </body>
 
