@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Snake - Gaming Hub</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/snake.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-gamepad"></i> Gaming Hub</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="game-container">
+            <div class="container">
+                <h2>Classic Snake</h2>
+                <div class="game-info">
+                    <p>Use arrow keys to control the snake. Eat food to grow longer, but avoid hitting the walls or yourself!</p>
+                    <div class="score-container">
+                        <p>Score: <span id="score">0</span></p>
+                        <p>High Score: <span id="highScore">0</span></p>
+                    </div>
+                    <button id="startBtn" class="btn">Start Game</button>
+                    <button id="resetBtn" class="btn">Reset Game</button>
+                </div>
+                <div class="game-board">
+                    <canvas id="snakeCanvas" width="600" height="400"></canvas>
+                </div>
+                <div class="controls-info">
+                    <h3>Controls:</h3>
+                    <p>↑ Up | ↓ Down | ← Left | → Right</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Gaming Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/snake.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+/* CSS for Snake Game */
+
+/* Game board styling */
+#snakeCanvas {
+    background: #f8f9fa;
+    border: 2px solid #2c3e50;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 0 auto;
+}
+
+/* Controls info styling */
+.controls-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.controls-info h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}

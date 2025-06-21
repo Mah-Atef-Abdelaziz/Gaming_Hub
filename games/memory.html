@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="../css/games.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/memory.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* simple grid & card styles; you can also move these into games.css */
+        #memory-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 40px;
+        }
+
+        #memory-game {
+            display: grid;
+            grid-template-columns: repeat(4, 100px);
+            grid-gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            width: 100px;
+            height: 100px;
+            background: #444;
+            color: #fff;
+            font-size: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+            border-radius: 8px;
+            position: relative;
+            transform: perspective(600px) rotateY(0deg);
+            transition: transform 0.3s;
+        }
+
+        .card.flipped {
+            background: #fff;
+            color: #000;
+            transform: perspective(600px) rotateY(180deg);
+            cursor: default;
+        }
+
+        #moves {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        #restart {
+            padding: 8px 16px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-gamepad"></i> Gaming Hub</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="memory-container">
+        <div id="moves">Moves: 0</div>
+        <div id="memory-game"></div>
+        <button id="restart">Restart</button>
+    </div>
+
+    <script src="../js/memory.js"></script>
+</body>
+
+</html>

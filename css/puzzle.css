@@ -1,0 +1,51 @@
+/* CSS for Image Puzzle Slider Game */
+
+/* Puzzle container styling */
+.puzzle-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.puzzle-grid {
+    display: grid;
+    grid-gap: 2px;
+    margin: 0 auto;
+}
+
+.puzzle-tile {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    border: 2px solid #2c3e50;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.puzzle-tile:hover {
+    transform: scale(0.95);
+}
+
+.puzzle-preview {
+    margin-left: 30px;
+    text-align: center;
+}
+
+.puzzle-preview h3 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.puzzle-preview img {
+    border: 2px solid #2c3e50;
+}
+
+.puzzle-difficulty {
+    margin-bottom: 15px;
+}
+
+#difficulty {
+    padding: 5px 10px;
+    margin-left: 10px;
+}
